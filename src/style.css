@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 
+
+/************8 Home Page ************/
 .homeContainer {
     font-family: 'Tangerine', cursive, sans-serif;
     color: white;
@@ -18,4 +20,69 @@
     height: 350px;
     width: 350px;
     border-radius: 50%;
+}
+
+
+/*********************** Menu Page *************************/
+
+.menuContainer {
+    font-family: 'Tangerine', cursive, sans-serif;
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px 4rem;
+    width: auto;
+
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuContainer .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    text-align: center;
+}
+
+.menuItem h1 {
+    margin: 10px;
+}
+
+.menuItem p {
+    font-family: sans-serif;
+}
+
+.menuItem .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.aboutContainer {
+    font-family: sans-serif;
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px 4rem;
+    width: 60%;
+    border-radius: 8px;
+
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContainer h1 {
+    font-family: 'Tangerine', cursive, sans-serif;
 }
