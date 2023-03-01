@@ -8,6 +8,7 @@
   "plugins": ["prettier"],
   "overrides": [],
   "parserOptions": {
+    "sourceType": "module",
     "ecmaVersion": "latest"
   },
   "rules": {
@@ -28,6 +29,11 @@
     "guard-for-in": "off",
     "no-restricted-syntax": "off",
     "no-plusplus": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "no-unused-expressions": "off",
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      { "ignores": ["modules"] }
+    ]
   }
 }

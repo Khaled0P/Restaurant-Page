@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+.homeContainer {
+    font-family: 'Tangerine', cursive, sans-serif;
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px 4rem;
+
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeImg img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
