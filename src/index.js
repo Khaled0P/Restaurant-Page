@@ -6,28 +6,24 @@ const homeBtn = document.querySelector('button.home');
 const menuBtn = document.querySelector('button.menu');
 const aboutBtn = document.querySelector('button.about');
 const Content = document.getElementById('Content');
+const clearPage = function () {
+  while (Content.firstChild) {
+    Content.removeChild(Content.firstChild);
+  }
+};
 homePage();
-// Content.appendChild(menuPage());
-// Content.appendChild(aboutPage());
 
 homeBtn.addEventListener('click', () => {
-  document.querySelector('.menuContainer')
-    ? Content.removeChild(document.querySelector('.menuContainer'))
-    : Content.removeChild(document.querySelector('.aboutContainer'));
+  clearPage();
   homePage();
 });
 
 menuBtn.addEventListener('click', () => {
-  document.querySelector('.homeContainer')
-    ? Content.removeChild(document.querySelector('.homeContainer'))
-    : Content.removeChild(document.querySelector('.aboutContainer'));
-
+  clearPage();
   Content.appendChild(menuPage());
 });
 
 aboutBtn.addEventListener('click', () => {
-  document.querySelector('.homeContainer')
-    ? Content.removeChild(document.querySelector('.homeContainer'))
-    : Content.removeChild(document.querySelector('.menuContainer'));
+  clearPage();
   Content.appendChild(aboutPage());
 });
