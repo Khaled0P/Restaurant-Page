@@ -46,6 +46,7 @@ nav button {
     color: white;
     font-size: 1.1rem;
     padding: 5px 10px;
+    text-transform: capitalize;
 }
 
 nav button:hover {
