@@ -20,21 +20,3 @@
     z-index: -2;
 
 }
-
-
-.Content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-
-
-.homeContent .homeImg {
-    background: url(../attachments/home-pic.jpg);
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-}

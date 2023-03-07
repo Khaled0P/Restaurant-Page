@@ -2,8 +2,10 @@ import homePage from './homePage';
 import menuPage from './menuPage';
 import aboutPage from './aboutPage';
 import navBar from './nav';
+import './style.css';
 
 const Content = document.getElementById('Content');
+Content.classList.add('Content');
 document.body.insertBefore(navBar(), Content);
 
 const homeBtn = document.querySelector('button.home');

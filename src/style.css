@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
 /**************** nav bar*********************/
 
 header {
@@ -38,6 +39,15 @@ nav button:hover {
     cursor: pointer;
 }
 
+/******** page Container********/
+
+.Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
 
 /************8 Home Page ************/
 .homeContainer {
