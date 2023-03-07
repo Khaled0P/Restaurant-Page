@@ -18,6 +18,7 @@ export default function navBar() {
     this.btn.innerHTML = _class;
   };
 
+  //buttons display
   Button.prototype.appendToNav = function () {
     nav.appendChild(this.btn);
   };
@@ -27,7 +28,6 @@ export default function navBar() {
   buttons.forEach((ele) => {
     ele.appendToNav();
   });
-
   header.appendChild(logo);
   header.appendChild(nav);
   return header;

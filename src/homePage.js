@@ -9,5 +9,5 @@ export default function homePage() {
         <div class="homeImg"><img src = "${homePic}"></div>
         <h1>Order online or visit us!</h1>`;
   homeContainer.classList.add('homeContainer');
-  document.getElementById('Content').appendChild(homeContainer);
+  return homeContainer;
 }

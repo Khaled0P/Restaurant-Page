@@ -41,7 +41,7 @@ export default function homePage() {
   menuItems.forEach((item) => {
     menu.appendChild(item);
   });
-  console.log(menu);
   menuContainer.appendChild(menu);
+
   return menuContainer;
 }
